@@ -13,8 +13,4 @@ UCLASS()
 class TESTINGGROUNDS_API ARoutePatrollerPawn : public ATP_ThirdPersonCharacter
 {
     GENERATED_BODY()
-
-public:
-    UPROPERTY(EditAnywhere, Category = "Patrol Route")
-    TArray<AActor*> PatrolWaypoints;
 };

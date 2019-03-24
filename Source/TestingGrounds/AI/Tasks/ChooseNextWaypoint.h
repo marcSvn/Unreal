@@ -6,6 +6,9 @@
 #include "BehaviorTree/BTTaskNode.h"
 #include "ChooseNextWaypoint.generated.h"
 
+class AAIController;
+class UPatrolRouteComponent;
+
 /**
  *
  */
@@ -22,4 +25,8 @@ protected:
 
     UPROPERTY(EditAnywhere, Category = "Blackboard")
     struct FBlackboardKeySelector WaypointKey;
+
+private:
+
+    UPatrolRouteComponent* GetPatrolRouteComponent(AAIController* lAIController);
 };
